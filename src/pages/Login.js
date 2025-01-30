@@ -28,6 +28,7 @@ function Login() {
         if (!email || !password) {
             return handleError('email and password are required')
         }
+        
         try {
             const url = `http://localhost:5000/api/products`;
             const response = await fetch(url, {
